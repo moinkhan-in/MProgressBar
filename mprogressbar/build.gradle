@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'com.msquare.widget.mprogressbar'
+
+    publishedGroupId = 'com.msquare.widget.mprogressbar'
+    libraryName = 'MProgressBar'
+    artifact = 'mprogressbar'
+
+    libraryDescription = 'A Progress with multiple progress'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'mk'
+    developerName = 'Moinkhan'
+    developerEmail = 'pathan.moin015@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+}
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'

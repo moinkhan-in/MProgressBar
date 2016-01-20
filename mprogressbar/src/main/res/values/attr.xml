@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MProgressBar">
+        <attr name="showProgressText" format="boolean" />
+        <attr name="progress" format="integer" />
+        <attr name="secondaryProgress" format="integer" />
+        <attr name="progressColor" format="color" />
+        <attr name="secondaryProgressColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="primaryCapSize" format="integer" />
+        <attr name="secodaryCapSize" format="integer" />
+        <attr name="primaryCapVisibility" format="boolean" />
+        <attr name="secodaryCapVisibility" format="boolean" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+</resources>
