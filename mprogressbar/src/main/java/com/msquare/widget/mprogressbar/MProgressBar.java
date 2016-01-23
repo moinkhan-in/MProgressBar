@@ -10,7 +10,7 @@ import android.graphics.Paint;
 import android.graphics.RectF;
 import android.text.TextPaint;
 import android.util.AttributeSet;
-import android.view.View;import com.msquare.widget.mprogressbar.R;import java.lang.IllegalArgumentException;import java.lang.Math;import java.lang.Override;
+import android.view.View;
 
 public class MProgressBar extends View {
 
