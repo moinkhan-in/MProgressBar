@@ -5,7 +5,7 @@ You can customize color,size and other properties as per your need.
 ![MProgressBar]( https://github.com/msquare097/MProgressBar/blob/master/MProgressBar.png )
 
 #Usage
-`compile 'com.msquare.widget.mprogressbar:mprogressbar:1.0.0'`
+`compile 'com.msquare.widget.mprogressbar:mprogressbar:1.1.0'`
 
 ```
 <com.msquare.widget.mprogressbar.MProgressBar
