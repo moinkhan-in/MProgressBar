@@ -174,16 +174,19 @@ public class MProgressBar extends View {
 
     public void setBackgroundColor(int mBackgroundColor) {
         this.mBackgroundColor = mBackgroundColor;
+        this.mBackgroundPaint.setColor(mBackgroundColor);
         invalidate();
     }
 
     public void setSecondaryProgressColor(int mSecondaryProgressColor) {
         this.mSecondaryProgressColor = mSecondaryProgressColor;
+        this.mSecondaryPaint.setColor(mSecondaryProgressColor);
         invalidate();
     }
 
     public void setPrimaryProgressColor(int mPrimaryProgressColor) {
         this.mPrimaryProgressColor = mPrimaryProgressColor;
+        this.mPrimaryPaint.setColor(mPrimaryProgressColor);
         invalidate();
     }
 
@@ -193,8 +196,9 @@ public class MProgressBar extends View {
     }
 
     public void setProgress(int mProgress) {
-        this.mProgress = mProgress;
-        invalidate();
+        for (;this.mProgress <= mProgress; this.mProgress++) {
+            postInvalidateDelayed(150);
+        }
     }
 
     public void setSecondaryProgress(int mSecondaryProgress) {
@@ -204,6 +208,7 @@ public class MProgressBar extends View {
 
     public void setTextColor(int mTextColor) {
         this.mTextColor = mTextColor;
+        this.mTextPaint.setColor(mTextColor);
         invalidate();
     }
 
